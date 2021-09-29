@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
                 if(txtUsername.getText().toString().equals("123") && txtPassword.getText().toString().equals("123")){
-                    Log.i("test","hola he fet click"); //comprobacio de fer click
+                    Log.i("test","hola he fet click"); //comprobation of the click
                 }
             }
         });
