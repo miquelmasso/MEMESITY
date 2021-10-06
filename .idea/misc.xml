@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13333333333333333" />
         <entry key="app/src/main/res/drawable/custom_email_icon.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/custom_input.xml" value="0.13055555555555556" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.3260416666666667" />
@@ -12,9 +13,21 @@
         <entry key="app/src/main/res/drawable/ic_email.xml" value="0.165" />
         <entry key="app/src/main/res/drawable/ic_email_24.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/ic_email_focused.xml" value="0.13055555555555556" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.13333333333333333" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.13333333333333333" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.13055555555555556" />
         <entry key="app/src/main/res/drawable/ic_lock_focused.xml" value="0.13055555555555556" />
+        <entry key="app/src/main/res/drawable/ic_nombre.xml" value="0.13333333333333333" />
+        <entry key="app/src/main/res/drawable/ic_notifications.xml" value="0.13333333333333333" />
+        <entry key="app/src/main/res/drawable/ic_person.xml" value="0.13333333333333333" />
+        <entry key="app/src/main/res/drawable/ic_persona.xml" value="0.31574074074074077" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.13333333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_form_list.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/inicio.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/menu/top_navigation.xml" value="0.16770833333333332" />
       </map>
     </option>
   </component>

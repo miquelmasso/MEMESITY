@@ -8,10 +8,9 @@
 
     <EditText
         android:id="@+id/txtUsername"
-        android:layout_width="264dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="182dp"
-        android:drawableStart="@drawable/ic_custom_email"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="232dp"
         android:drawablePadding="12dp"
         android:ems="10"
         android:hint="Username"
@@ -22,10 +21,9 @@
 
     <EditText
         android:id="@+id/txtPassword"
-        android:layout_width="264dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="52dp"
-        android:drawableStart="@drawable/ic_custom_lock"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:drawablePadding="12dp"
         android:ems="10"
         android:hint="Password"
@@ -37,12 +35,23 @@
 
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="82dp"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
         android:text="Entrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEMESITY"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MEMESITY">
         <activity
+            android:name=".MainMenu"
+            android:exported="true" />
+        <activity
+            android:name=".Formulari"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
