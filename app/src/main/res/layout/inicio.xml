@@ -6,35 +6,23 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/top_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/top_navigation"
-        tools:layout_editor_absoluteX="0dp">
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </FrameLayout>
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_navigation"
-        app:labelVisibilityMode="unlabeled"
-        tools:layout_editor_absoluteX="1dp">
+        tools:layout_editor_absoluteX="0dp" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
-        </FrameLayout>
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

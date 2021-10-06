@@ -3,6 +3,7 @@ package com.example.memesity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,24 +22,6 @@ public class MainActivity extends AppCompatActivity {
         EditText txtUsername = findViewById(R.id.txtUsername);
         EditText txtPassword = findViewById(R.id.txtPassword);
 
-       // Intent goFormulari = new Intent( packageContext: this, Formulari.class);
-
-
-        BottomNavigationView bottomNav = findViewById(R.id.main_menu);
-
-        bottomNav.setOnNavigationItemSelectedListener(item -> {
-            Fragment selectedFragment = null;
-            switch (item.getItemId()){
-                case R.id.nav_home:
-                    selectedFragment = new FragmentHome();
-                    break;
-            }
-
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-
-            return true;
-        });
-
 
 
 
@@ -46,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
                 if(txtUsername.getText().toString().equals("123") && txtPassword.getText().toString().equals("123")){
+                    startActivity(new Intent(getApplicationContext(),MainMenu.class));
                     Log.i("test","hola he fet click"); //comprobation of the click
                 }
             }
