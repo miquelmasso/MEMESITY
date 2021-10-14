@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.graphics.drawable.shapes.Shape;
+
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -21,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
         Button btnSignIn = findViewById(R.id.btnSignIn);
         EditText txtUsername = findViewById(R.id.txtUsername);
         EditText txtPassword = findViewById(R.id.txtPassword);
-
-
-
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

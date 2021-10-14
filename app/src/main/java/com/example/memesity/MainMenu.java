@@ -2,6 +2,8 @@ package com.example.memesity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import android.graphics.drawable.shapes.Shape;
+
 
 import android.os.Bundle;
 
@@ -13,6 +15,9 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomePrincipal()).commit();
+
 
         BottomNavigationView bottomNav = findViewById(R.id.main_menu);
 

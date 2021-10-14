@@ -3,10 +3,18 @@ package com.example.memesity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.provider.Contacts;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -46,19 +54,43 @@ public class HomePrincipal extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_homeprincipal, container, false);
+        View view = inflater.inflate(R.layout.fragment_homeprincipal, container, false);
+
+        ArrayList<String> array_noms = new ArrayList<String>();
+        array_noms.add("Luke Skywalker");
+        array_noms.add("Leia Organa");
+        array_noms.add("Chewbacca");
+        array_noms.add("C3P0");
+        array_noms.add("R2D2");
+        array_noms.add("Darth Vader");
+        array_noms.add("Han Solo");
+        array_noms.add("Luke Skywalker");
+        array_noms.add("Leia Organa");
+        array_noms.add("Chewbacca");
+        array_noms.add("C3P0");
+        array_noms.add("R2D2");
+        array_noms.add("Darth Vader");
+        array_noms.add("Han Solo");
+        array_noms.add("Luke Skywalker");
+        array_noms.add("Leia Organa");
+        array_noms.add("Chewbacca");
+        array_noms.add("C3P0");
+        array_noms.add("R2D2");
+        array_noms.add("Darth Vader");
+        array_noms.add("Han Solo");
+
+
+
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(array_noms);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager((getContext())));
+        recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
+
+        return view;
     }
 }
